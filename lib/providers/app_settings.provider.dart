@@ -19,7 +19,6 @@ class UserSettings extends _$UserSettings {
   }
 
   Future<void> updateLoginType(LoginType loginType) async {
-    print("Called");
     final previous = await future;
     final newSettings = previous.copyWith(loginType: loginType);
     await AppDb.database?.userSettingsDao
