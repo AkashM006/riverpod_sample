@@ -6,6 +6,7 @@ enum LoginType {
 
 const loginTypeKey = "loginType";
 
+
 class UserSettingsModel {
   final LoginType loginType;
   const UserSettingsModel({
